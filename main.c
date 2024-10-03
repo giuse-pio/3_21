@@ -3,7 +3,7 @@
 int main(void) {
     int g, m, a;
     int condizone = m;
-    printf("inserisci la data");
+    printf("inserisci la data: ");
     scanf("%d %d %d", &g, &m, &a);
     switch (m) {
         case 1:
@@ -30,7 +30,7 @@ int main(void) {
             }
         break;
         case 2:
-            if (a%4 == 0 && a%100 != 0 || a%400 == 0 && g>29) {
+            if ((a%4 == 0 && a%400 == 0) && g>29) {
                 printf("la data e' un anno bisestile\n");
             }
             else {
