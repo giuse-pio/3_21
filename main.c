@@ -30,15 +30,14 @@ int main(void) {
             }
         break;
         case 2:
-            if ((a%4 == 0 && a%400 == 0) && g>29) {
-                printf("la data e' un anno bisestile\n");
+        if (g>=1 && g<=28 || a%4 == 0 && a%100 != 0|| a%400 == 0) {
+                printf("la data e' corretta");
             }
-            else {
-                a%4 == 1 && g>28;
-                printf("la data e' corretta\n");
-                }
+        else {
+            printf("la data non e' corretta");
+        }
             break;
         default:
-            printf("il mese inserito non e' corrtto");
+            printf("la data inserita non e' corretta");
             }
     }
